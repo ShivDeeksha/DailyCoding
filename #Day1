@@ -1,0 +1,11 @@
+nums=[1,2,3,4,5]
+prd=[]
+def prod(ar):
+  prod=1
+  for i in ar:
+    prod*=i
+  return prod
+
+for i in range (len(nums)):
+  prd.append(prod(nums[:i]+nums[i+1:]))
+print(prd)
